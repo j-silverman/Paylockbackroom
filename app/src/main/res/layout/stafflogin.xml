@@ -3,7 +3,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <Button
-        android:text="Button"
+        android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button13"
@@ -20,7 +20,8 @@
         android:layout_alignBottom="@+id/button13"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="57dp"
-        android:id="@+id/editText5" />
+        android:id="@+id/editText5"
+        android:hint="Email"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
         android:layout_alignRight="@+id/editText5"
         android:layout_alignEnd="@+id/editText5"
         android:layout_marginBottom="15dp"
-        android:id="@+id/editText6" />
+        android:id="@+id/editText6"
+        android:hint="Password"/>
 
 </RelativeLayout>

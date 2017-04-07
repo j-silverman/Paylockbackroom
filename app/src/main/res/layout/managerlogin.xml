@@ -2,18 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:layout_marginBottom="75dp"
-        android:id="@+id/editText2"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_centerHorizontal="true" />
-
     <Button
-        android:text="Button"
+        android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button12"
@@ -28,11 +18,23 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_marginTop="126dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/button12"
-        android:layout_alignStart="@+id/button12" />
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:hint="Password"/>
 </RelativeLayout>
