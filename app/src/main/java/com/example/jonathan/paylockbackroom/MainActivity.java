@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendMessage(View view){
 
-        Intent intent = new Intent(MainActivity.this, ManagerUI.class);
+        Intent intent = new Intent(MainActivity.this, Managerlogin.class);
         startActivity(intent);
 
     }
     public void sendMessage1(View view){
 
-        Intent intent = new Intent(MainActivity.this, StaffUI.class);
+        Intent intent = new Intent(MainActivity.this, Stafflogin.class);
         startActivity(intent);
 
     }
