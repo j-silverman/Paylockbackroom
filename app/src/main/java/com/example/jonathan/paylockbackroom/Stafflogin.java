@@ -22,7 +22,7 @@ public class Stafflogin extends AppCompatActivity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.8),(int)(height*.5));
+        getWindow().setLayout((int)(width*.8),(int)(height*.4));
 
     }
     public void staffui(View view){

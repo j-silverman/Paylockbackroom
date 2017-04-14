@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,14 +33,14 @@
         <activity android:name=".Checksched" />
         <activity android:name=".Logbootsin" />
         <activity android:name=".Fixedboots" />
-        <activity android:name=".Managerlogin"
-            android:theme = "@style/AppTheme.CustomTheme"
-            />
-        <activity android:name=".Stafflogin"
-            android:theme = "@style/AppTheme.CustomTheme"
-            />
-        <activity android:name=".Checkpprod"></activity>
-
+        <activity
+            android:name=".Managerlogin"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Stafflogin"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".Checkpprod" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
