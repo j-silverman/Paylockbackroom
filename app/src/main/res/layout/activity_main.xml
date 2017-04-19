@@ -28,16 +28,6 @@
         android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button" />
 
-    <Button
-        android:text="Manager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="sendMessage"
-        android:id="@+id/button"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp" />
-
     <TextView
         android:text="Register"
         android:layout_width="wrap_content"
@@ -48,6 +38,16 @@
         android:layout_marginRight="8dp"
         android:layout_marginEnd="8dp"
         android:id="@+id/tvRegister" />
+
+    <Button
+        android:text="Manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:id="@+id/button"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
