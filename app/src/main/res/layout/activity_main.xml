@@ -23,18 +23,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sendMessage1"
-        android:id="@+id/button2"
+        android:id="@+id/bStaff"
         android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignRight="@+id/bManager"
+        android:layout_alignEnd="@+id/bManager" />
 
     <TextView
         android:text="Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
+        android:layout_below="@+id/bStaff"
+        android:layout_alignRight="@+id/bStaff"
+        android:layout_alignEnd="@+id/bStaff"
         android:layout_marginRight="8dp"
         android:layout_marginEnd="8dp"
         android:id="@+id/tvRegister" />
@@ -44,9 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sendMessage"
-        android:id="@+id/button"
+        android:id="@+id/bManager"
         android:layout_marginBottom="12dp"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/bStaff"
         android:layout_centerHorizontal="true" />
 
 

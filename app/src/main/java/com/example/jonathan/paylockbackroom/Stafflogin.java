@@ -9,7 +9,7 @@ import android.view.View;
 /**
  * Created by Jonathan on 4/7/2017.
  */
-public class Stafflogin extends AppCompatActivity {
+public class Stafflogin extends AppCompatActivity implements View.OnClickListener{
     private View view;
 
     @Override
@@ -25,11 +25,16 @@ public class Stafflogin extends AppCompatActivity {
         getWindow().setLayout((int)(width*.8),(int)(height*.4));
 
     }
-    public void staffui(View view){
-        this.view = view;
+    //public void staffui(View view){
+      //  this.view = view;
 
-        Intent intent = new Intent(Stafflogin.this, StaffUI.class);
-        startActivity(intent);
+        //Intent intent = new Intent(Stafflogin.this, StaffUI.class);
+        //startActivity(intent);
+
+    //}
+
+    @Override
+    public void onClick(View v) {
 
     }
 }

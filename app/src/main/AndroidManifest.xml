@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jonathan.paylockbackroom">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -42,7 +42,9 @@
             android:name=".Stafflogin"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".Checkpprod" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity">
+
+        </activity>
     </application>
 
 </manifest>

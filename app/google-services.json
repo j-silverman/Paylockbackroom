@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "778765993929",
+    "firebase_url": "https://fir-authdemo-9cf96.firebaseio.com",
+    "project_id": "fir-authdemo-9cf96",
+    "storage_bucket": "fir-authdemo-9cf96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778765993929:android:c853a3a8653562d2",
+        "android_client_info": {
+          "package_name": "com.example.jonathan.paylockbackroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778765993929-4clvne6ss7putimu3383v9b2gh343bm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA79BatkG00aj1rWFZzHRHQWEjboNx1zf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

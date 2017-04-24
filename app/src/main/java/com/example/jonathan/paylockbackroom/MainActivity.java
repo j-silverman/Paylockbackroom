@@ -12,33 +12,38 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private TextView tvRegister;
+
+    private Button bManager;
+    private Button bStaff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final TextView register = (TextView) findViewById(R.id.tvRegister);
+        tvRegister = (TextView) findViewById(R.id.tvRegister);
+        bManager = (Button) findViewById(R.id.bManager);
+        bStaff = (Button) findViewById(R.id.bStaff);
 
-        register.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
-                MainActivity.this.startActivity(registerIntent);
-            }
-        });
-    }
-
-    public void sendMessage(View view){
-
-        Intent intent = new Intent(MainActivity.this, Managerlogin.class);
-        startActivity(intent);
+        tvRegister.setOnClickListener(this);
+        bManager.setOnClickListener(this);
+        bStaff.setOnClickListener(this);
 
     }
-    public void sendMessage1(View view){
 
-        Intent intent = new Intent(MainActivity.this, Stafflogin.class);
-        startActivity(intent);
+
+    @Override
+    public void onClick(View v) {
+        if(v == tvRegister){
+            startActivity(new Intent(this, RegisterActivity.class));
+        }
+        if(v == bManager){
+            startActivity(new Intent(this, Managerlogin.class));
+        }
+        if(v == bStaff){
+            startActivity(new Intent(this, Stafflogin.class));
+        }
 
     }
 }
