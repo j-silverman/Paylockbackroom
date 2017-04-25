@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:778765993929:android:c853a3a8653562d2",
         "android_client_info": {
-          "package_name": "com.example.jonathan.paylockbackroom"
+          "package_name": "com.example.jonathan.firebasebasics"
         }
       },
       "oauth_client": [
@@ -31,6 +31,50 @@
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778765993929:android:251bd1b504591c11",
+        "android_client_info": {
+          "package_name": "com.example.jonathan.paylockbackroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778765993929-3vn3ra8oieabnidp3n70m9rlmsnpalo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jonathan.paylockbackroom",
+            "certificate_hash": "e86e4e612c37f2c90fa3c0ee8c39cf6297fefd74"
+          }
+        },
+        {
+          "client_id": "778765993929-4clvne6ss7putimu3383v9b2gh343bm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA79BatkG00aj1rWFZzHRHQWEjboNx1zf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778765993929-4clvne6ss7putimu3383v9b2gh343bm3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
