@@ -49,4 +49,14 @@
         android:layout_alignParentStart="true"
         android:id="@+id/button9"
         android:onClick="sendMessage8"/>
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9"
+        android:layout_marginTop="65dp"
+        android:id="@+id/bStaffLogout" />
 </RelativeLayout>

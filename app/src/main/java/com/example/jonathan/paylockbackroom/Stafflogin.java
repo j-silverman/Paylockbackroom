@@ -78,6 +78,10 @@ public class Stafflogin extends AppCompatActivity implements View.OnClickListene
                             startActivity(new Intent(getApplicationContext(),StaffUI.class));
 
                         }
+                        else {
+                            Toast.makeText(Stafflogin.this, "login failed",Toast.LENGTH_SHORT ).show();
+                        }
+                        progressDialog.dismiss();
                     }
                 });
     }

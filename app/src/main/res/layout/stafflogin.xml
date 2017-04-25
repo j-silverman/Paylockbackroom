@@ -7,7 +7,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bStaffLogin"
-        android:onClick="staffui"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="135dp" />
@@ -20,19 +19,19 @@
         android:layout_alignBottom="@+id/bStaffLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="57dp"
-        android:id="@+id/etStaffEmail"
-        android:hint="Email"/>
+        android:id="@+id/etStaffPassword"
+        android:hint="Password"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:layout_above="@+id/etStaffEmail"
-        android:layout_alignRight="@+id/etStaffEmail"
-        android:layout_alignEnd="@+id/etStaffEmail"
+        android:layout_above="@+id/etStaffPassword"
+        android:layout_alignRight="@+id/etStaffPassword"
+        android:layout_alignEnd="@+id/etStaffPassword"
         android:layout_marginBottom="15dp"
-        android:id="@+id/etStaffPassword"
-        android:hint="Password"/>
+        android:id="@+id/etStaffEmail"
+        android:hint="Email"/>
 
 </RelativeLayout>
