@@ -10,12 +10,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jonathan.paylockbackroom.Emptyracks">
 
-    <TextView
-        android:text="Assign and rank empty racks"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Empty Rack Number"
+        android:id="@+id/etEmptyRacks" />
+
+    <Button
+        android:text="Log Empty Racks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmptyRacks"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bLogEmptyRacks" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvEmptyRacks"
+        android:layout_below="@+id/bLogEmptyRacks"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView2" />
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="76dp" />
 </RelativeLayout>

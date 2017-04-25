@@ -10,12 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jonathan.paylockbackroom.Incomingboots">
 
-    <TextView
-        android:text="Schedule boots for pickup with names"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView3" />
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/etScheduleIncomingName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Date"
+        android:ems="10"
+        android:layout_below="@+id/etScheduleIncomingName"
+        android:layout_alignLeft="@+id/etScheduleIncomingName"
+        android:layout_alignStart="@+id/etScheduleIncomingName"
+        android:layout_marginTop="22dp"
+        android:id="@+id/etScheduleIncomingDate" />
+
+    <Button
+        android:text="Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etScheduleIncomingDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/bScheduleIncoming" />
 </RelativeLayout>
