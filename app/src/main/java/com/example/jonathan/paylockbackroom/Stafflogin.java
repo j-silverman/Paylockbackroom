@@ -1,4 +1,4 @@
-package com.example.jonathan.paylockbackroom;
+package com.example.jonathan.Paylockbackroom;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jonathan.paylockbackroom">
+    package="com.example.jonathan.Paylockbackroom">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>"
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.jonathan.Paylockbackroom.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,31 +18,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ManagerUI"
+            android:name="com.example.jonathan.Paylockbackroom.ManagerUI"
             android:label="@string/app_name">
             >
         </activity>
         <activity
-            android:name=".StaffUI"
+            android:name="com.example.jonathan.Paylockbackroom.StaffUI"
             android:label="@string/app_name">
             >
         </activity>
         <activity
-            android:name=".Checkprod"
+            android:name="com.example.jonathan.Paylockbackroom.Checkprod"
             android:label="@string/app_name" />
-        <activity android:name=".Emptyracks" />
-        <activity android:name=".Incomingboots" />
-        <activity android:name=".Checksched" />
-        <activity android:name=".Logbootsin" />
-        <activity android:name=".Fixedboots" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.Emptyracks" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.Incomingboots" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.Checksched" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.Logbootsin" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.Fixedboots" />
         <activity
-            android:name=".Managerlogin"
+            android:name="com.example.jonathan.Paylockbackroom.Managerlogin"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity
-            android:name=".Stafflogin"
+            android:name="com.example.jonathan.Paylockbackroom.Stafflogin"
             android:theme="@style/AppTheme.CustomTheme" />
-        <activity android:name=".Checkpprod" />
-        <activity android:name=".RegisterActivity">
+        <activity android:name="com.example.jonathan.Paylockbackroom.Checkpprod" />
+        <activity android:name="com.example.jonathan.Paylockbackroom.RegisterActivity">
 
         </activity>
     </application>

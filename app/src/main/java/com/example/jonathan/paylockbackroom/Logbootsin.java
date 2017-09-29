@@ -1,24 +1,18 @@
-package com.example.jonathan.paylockbackroom;
+package com.example.jonathan.Paylockbackroom;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+public class Logbootsin extends AppCompatActivity implements View.OnClickListener{
 
-public class Logbootsin extends AppCompatActivity {
-
-    private Button bStaffLogBoots;
-    private EditText etBootLogin;
-    private EditText etBootCondition;
-
-    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference mConditionRef = mRootRef.child("condition");
+    Button bStaffLogBoots;
+    EditText etBootLogin;
+    EditText etBootCondition;
+    String bootnum, bootcond, date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,22 +22,19 @@ public class Logbootsin extends AppCompatActivity {
         bStaffLogBoots = (Button)findViewById(R.id.bStaffLogBoots);
         etBootLogin = (EditText)findViewById(R.id.etBootLogin);
         etBootCondition = (EditText)findViewById(R.id.etBootCondition);
+        bStaffLogBoots.setOnClickListener(this);
 
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        mConditionRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        })
+    public void onClick(View v) {
+        if(v == bStaffLogBoots){
+            String bootnum = etBootLogin.getText().toString();
+            String bootcond = etBootCondition.getText().toString();
+            String date = "2017-04-28";
+            String type = "logBoots";
+            logBootsInBackground logBootsInBackground = new logBootsInBackground(this);
+            logBootsInBackground.execute(type, bootnum, bootcond, date);
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.jonathan.paylockbackroom;
+package com.example.jonathan.Paylockbackroom;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

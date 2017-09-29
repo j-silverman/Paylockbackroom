@@ -1,4 +1,4 @@
-package com.example.jonathan.paylockbackroom;
+package com.example.jonathan.Paylockbackroom;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -53,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             return;
         }
         if(TextUtils.isEmpty(password)){
-            Toast.makeText(this, "Please entere password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter password", Toast.LENGTH_SHORT).show();
             return;
         }
         progressDialog.setMessage("Registering User...");
